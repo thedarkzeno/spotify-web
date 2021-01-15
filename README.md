@@ -8,7 +8,7 @@
 </p>
 
 
-> Search by playlists with an simple interface
+> Search by playlists with a simple interface
 
 <p align="center"><img src="./screenshots/2.png"/></p>
 <p align="center"><img src="./screenshots/1.png"/></p>
