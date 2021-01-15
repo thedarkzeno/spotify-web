@@ -21,6 +21,7 @@ export default function Routes() {
       const windowUrl = window.location.hash;
       const params = new URLSearchParams(windowUrl.replace("#", "?"));
       const access_token = params.get("access_token");
+      console.log(access_token)
       const expires_in = params.get("expires_in");
 
       if (access_token !== null) {

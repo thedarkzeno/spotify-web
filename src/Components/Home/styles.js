@@ -29,10 +29,9 @@ export const ImageContainer = styled.div`
  
 `;
 export const Image = styled.img`
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
-  opacity: 0.7;
 `;
 export const Overlay = styled.div`
   position: relative;

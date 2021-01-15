@@ -11,3 +11,10 @@ export const SetResults = (value) => {
       value,
     };
   };
+
+  export const SetQuery = (value) => {
+    return {
+      type: "Set_Query",
+      value,
+    };
+  };
