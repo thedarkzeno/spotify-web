@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import Search from "../Search";
-import Header from "../Header";
+import Sidebar from "../Sidebar";
 
 import { Container, Card, CardText, Image, ImageContainer } from "./styles";
 
@@ -12,9 +12,9 @@ const Home = () => {
   //   console.log(elRefs);
   return (
     <>
-      <Header>
+      <Sidebar>
         <Search />
-      </Header>
+      </Sidebar>
       <Container>
         {reduxState.results.message && (
           <center>

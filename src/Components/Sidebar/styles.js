@@ -1,4 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const display = keyframes`
+  from {
+    display: none;
+    opacity: 0;
+    }
+  to {
+    display: block;
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.div`
   position: fixed;
@@ -11,6 +22,7 @@ export const Container = styled.div`
   box-shadow: 0 1px #000;
   color: #f1f1f1;
   z-index: 2;
+  animation: ${display} 0.5s ease-out;
 `;
 export const Icon = styled.div`
   position: fixed;

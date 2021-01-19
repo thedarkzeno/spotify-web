@@ -70,13 +70,15 @@ const Search = () => {
         dispatch(SetRefresh(true));
         history.push("/");
       });
-
-    setTimeout(() => {
-      if (mounted === true) {
-        setCount(count + 1);
-      }
-    }, 30000);
   }, [count, dispatch, history, mounted, currentFilters]);
+
+  useEffect(() => {
+    const interval = setInterval(updateCount, 30000);
+    return () => clearInterval(interval);
+  }, []);
+  const updateCount = () => {
+    setCount((c) => c + 1);
+  };
 
   const handleSearch = () => {
     setCurrentFilters(applyFilters);
